@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "python mon_robot.py"
+  },
+  "cron": {
+    "job": {
+      "schedule": "*/5 * * * *",
+      "command": "python mon_robot.py"
+    }
+  }
+}
