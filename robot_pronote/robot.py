@@ -3,7 +3,7 @@ import requests
 from datetime import datetime
 import time
 
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1387401256548696164/VWOUYFW1i2shyB9lqgUkzEK3r0fcYlAX5QFasBdTOwMZfq90SC_TrPM1zp5chfxzFThI"
+DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/TON_WEBHOOK_ICI"
 
 # Mémoriser les absences déjà signalées
 absences_signalees = set()
@@ -31,8 +31,8 @@ def detecter_absences():
             page.locator('//input[@id="button-submit"]').click()
             page.wait_for_selector('//button[@id="bouton_eleve"]', state="visible")
             page.locator('//button[@id="bouton_eleve"]').click()
-            page.fill('//input[@id="username"]', 'm.rychlinskite')
-            page.fill('//input[@id="password"]', 'Roxy3478@')
+            page.fill('//input[@id="username"]', 'TON_IDENTIFIANT')
+            page.fill('//input[@id="password"]', 'TON_MOT_DE_PASSE')
             page.click('//button[@id="bouton_valider"]')
             page.wait_for_load_state("domcontentloaded")
             page.wait_for_timeout(2000)
